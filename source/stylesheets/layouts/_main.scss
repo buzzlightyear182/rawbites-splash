@@ -61,24 +61,34 @@ a:hover, a:active, a:focus {
     max-width: 35%;
   }
   @media(max-width: 414px) {
-    max-width: 40% !important;
-    padding-top: 155px;
+    max-width: 45% !important;
+    padding-top: 115px;
   }
   @media(max-width: 375px) {
     max-width: 40% !important;
-    padding-top: 105px;
+    padding-top: 35px;
   }
   @media(max-width: 320px) {
     padding-top: 20px;
   }
+  // @media (min-device-width : 320px)
+  // and (max-device-width : 480px)
+  // and (orientation : portrait) {
+  //   max-width: 30%;
+  // }
 }
 
 .content {
   @include centered;
   @include media-breakpoint-down(xs) {
-    top: 270px;
+    top: 16.88rem;
     padding: 0px;
   }
+  // @media (min-device-width : 320px)
+  // and (max-device-width : 480px)
+  // and (orientation : portrait) {
+  //   top: 14.2rem;
+  // }
 }
 
 .subtitle {
