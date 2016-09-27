@@ -1,5 +1,129 @@
-.splash {
-  background: image-url('splash_page.jpg') no-repeat center center fixed;
+.container-fluid {
+  background: image-url('background.jpg') no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
+}
+
+body, p {
+  font-family: $font-family-sans-serif;
+  color: $dark;
+}
+
+h1, h2, h3, h4, h5, h6, p.heading {
+  font-family: $font-family-headings;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.background-white {
+  background-color: white;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.btn:hover {
+  transition: all 0.5s ease;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  background-color: darken($primary, 10%);
+  border-color: darken($primary, 10%);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  color: $brand-primary;
+}
+
+a:hover, a:active, a:focus {
+  color: darken($brand-primary, 15%);
+}
+
+.logo {
+  margin: auto;
+  @include media-breakpoint-down(md) {
+    max-width: 25%;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 35%;
+  }
+  @media(max-width: 414px) {
+    max-width: 40% !important;
+    padding-top: 155px;
+  }
+  @media(max-width: 375px) {
+    max-width: 40% !important;
+    padding-top: 105px;
+  }
+  @media(max-width: 320px) {
+    padding-top: 20px;
+  }
+}
+
+.content {
+  @include centered;
+  @include media-breakpoint-down(xs) {
+    top: 270px;
+    padding: 0px;
+  }
+}
+
+.subtitle {
+  margin: auto;
+  margin-top: 0.5rem;
+  color: $secondary;
+  @include media-breakpoint-down(sm) {
+    max-width: 430px;
+  }
+  @include media-breakpoint-down(xs) {
+    max-width: 400px;
+  }
+}
+
+#mc_embed_signup p.title {
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.mailchimp {
+  text-align: center;
+
+  input.email {
+    width: 90%;
+    max-width: 290px;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 2px solid $primary;
+    text-align: center;
+    padding: 5px;
+    @include media-breakpoint-down(md) {
+      font-size: 0.8rem;
+    }
+  }
+
+  .email:hover, .email:focus, .email:active {
+    background: rgba(255,255,255,1);
+    border: 0px;
+    border-radius: 0px;
+    outline: none;
+    border-bottom: 2px solid $primary;
+  }
+
+  input.subscribe {
+    margin-top: 10px;
+  }
 }
