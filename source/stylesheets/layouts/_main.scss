@@ -62,9 +62,11 @@ a:hover, a:active, a:focus {
 }
 
 .hero {
-  max-width: 1140px;
   margin: auto;
   display: block;
+  @media (min-width: 1140px) {
+    max-width: 1140px;
+  }
 }
 
 .why-subscribe {
@@ -114,6 +116,19 @@ a:hover, a:active, a:focus {
   }
 }
 
+.btn-aqua {
+  background: $dark-aqua;
+  color: white;
+
+  &:hover {
+    background-color: darken($dark-aqua, 15%);
+  }
+}
+
+.btn.subtitle {
+  padding: 10px 20px;
+}
+
 #mc_embed_signup p.title {
   margin-bottom: 0.5rem;
   margin-top: 1rem;
@@ -123,21 +138,31 @@ a:hover, a:active, a:focus {
   text-align: center;
 
   input.email {
-    width: 85%;
-    max-width: 360px;
+    width: 90%;
+    @media (min-width: 1281px) {
+      max-width: 550px;
+    }
+    height: 45px;
     background-color: white;
     border: 0px;
-    border-radius: 20px;
+    border-radius: 36px;
     text-align: center;
     padding: 8px;
     color: $dark-aqua;
     position: relative;
-    left: 20px;
+    @media (min-width: 576px) {
+      left: 20px;
+    }
   }
 
   button.subscribe {
     position: relative;
-    left: -20px;
+    left: -25px;
+    top: -2px;
     padding: 6px 7px;
+  }
+
+  .fa-paper-plane {
+    font-size: 18px;
   }
 }
