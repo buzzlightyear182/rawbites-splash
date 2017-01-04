@@ -21,7 +21,7 @@ gem 'jquery-middleman'
 gem 'middleman-autoprefixer'
 
 gem 'font-awesome-sass', '~> 4.6.2', require: false
-gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'bootstrap', '~> 4.0.0.alpha5'
 
 gem 'middleman-minify-html'
 gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
