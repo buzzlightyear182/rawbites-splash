@@ -129,6 +129,26 @@ a:hover, a:active, a:focus {
   padding: 10px 20px;
 }
 
+.container-fluid {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.bite-corner {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+
+  .bite {
+    max-width: 160px;
+    height: auto;
+    @media (max-width: 576px){
+      max-width: 100px;
+    }
+  }
+}
+
 #mc_embed_signup p.title {
   margin-bottom: 0.5rem;
   margin-top: 1rem;
