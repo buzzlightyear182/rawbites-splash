@@ -20,6 +20,14 @@ h1, h2, h3, h4, h5, h6, p.heading {
   color: $primary !important;
 }
 
+.text-white {
+  color: white;
+}
+
+.text-gray {
+  color: $dark;
+}
+
 .background-white {
   background-color: white;
 }
@@ -146,6 +154,52 @@ a:hover, a:active, a:focus {
     @media (max-width: 576px){
       max-width: 100px;
     }
+  }
+}
+
+.contact-form {
+  background: $yellow;
+
+  .title {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+  }
+
+  .btn {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+  }
+
+  .link {
+    color: $dark;
+
+    &:hover {
+      color: darken($dark, 15%);
+    }
+  }
+
+  .fa-mobile {
+    margin-right: 1.4rem;
+  }
+
+  .social-media .fa {
+    font-size: 2em;
+  }
+
+  .error {
+    color: #d9534f;
+    font-size: 80%;
+    font-weight: 700;
+  }
+
+  .alert-success {
+    background-color: $limegreen;
+    border-color: $limegreen;
+    color: white;
   }
 }
 

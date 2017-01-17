@@ -56,3 +56,52 @@ title: Raw Bites
     </div>
   </div>
 </div>
+</div>
+<div class='row mt-1 contact-form pt-3 pb-3'>
+  <div class="container">
+    <div class='col-md-10 offset-md-1 col-sm-12 text-center'>
+      <h3 class='title text-white mb-1'>Get in Touch</h3>
+      <p>We're looking for brand partners and brand ambassadors who are interested to work with us!<br>We'd love to hear from you.</p>
+    </div>
+    <div class="form offset-md-1 col-md-5 col-sm-12 mt-1">
+      <!-- Hidden message to show if contact is successful. -->
+      <div class="alert alert-success alert-dismissible text-center collapse" id="submit-success" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        Thanks for your message, we'll be in touch <i class="fa fa-smile-o"></i>
+      </div>
+      <!-- Hidden message to show if user encounters errors. -->
+      <div class="alert alert-danger alert-dismissible text-center collapse" id="submit-errors" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        It looks like there was an error submitting the form.
+        Please try again later, or send an email to <a href='mailto:hello@rawbites.com.ph'>hello@rawbites.com.ph</a>.
+      </div>
+      <%= partial 'partials/contact_form' %>
+    </div>
+    <div class="form offset-md-1 col-md-5 col-sm-12 mt-1">
+      <div>
+        <h5 class='title'>Email</h5>
+        <a href="mailto:hello@rawbites.com.ph" class='link'><i class="fa fa-envelope-o mr-1"></i>hello@rawbites.com.ph</a>
+      </div>
+      <div class='mt-2'>
+        <h5 class='title'>Call</h5>
+        <a href="tel:+6327408606" class='link'><i class="fa fa-phone mr-1"></i>+63 2 7408606</a><br>
+        <a href="tel:+639178392268" class='link'><i class="fa fa-mobile"></i>+63 917 8392268</a>
+      </div>
+      <div class='mt-2'>
+        <h5 class='title'>Address</h5>
+        <p>88A Apo Street, Barangay Lourdes<br>
+         Quezon City, Metro Manila<br>
+         Philippines 1114</p>
+      </div>
+      <div class='mt-2'>
+        <h5 class='title'>Follow Us!</h5>
+        <div class='social-media'>
+          <a href="https://www.facebook.com/Raw-Bites-Box-1729265320734564/" class='link mr-1' target="_blank"><i class="fa fa-facebook-official"></i></a>
+          <a href="https://www.instagram.com/rawbitesbox/" class='link mr-1' target="_blank"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.twitter.com/rawbitesbox/" class='link mr-1' target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.pinterest.com/rawbitesbox/" class='link mr-1' target="_blank"><i class="fa fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<form name="contactForm" id="contactForm" class='contact'>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name='name' class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+  </div>
+    <!-- <p class="help-block text-danger"></p> -->
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" name="_replyto" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      <!-- <p class="help-block text-danger"></p> -->
+  </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea class="form-control" placeholder="Your Message *" rows='6' id="message" required data-validation-required-message="Please enter a message." name='message'></textarea>
+    <!-- <p class="help-block text-danger"></p> -->
+  </div>
+  <input type="text" name="_gotcha" style="display:none" />
+  <div class="clearfix"></div>
+  <button type="submit" class="btn btn-aqua">Send Message</button>
+  </form>
