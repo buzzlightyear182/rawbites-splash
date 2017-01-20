@@ -211,12 +211,12 @@ a:hover, a:active, a:focus {
 .mailchimp {
   text-align: center;
 
-  input.email {
+  input.email, input.name {
     width: 90%;
     @media (min-width: 1281px) {
       max-width: 550px;
     }
-    height: 45px;
+    height: 40px;
     background-color: white;
     border: 0px;
     border-radius: 36px;
@@ -224,6 +224,9 @@ a:hover, a:active, a:focus {
     padding: 8px;
     color: $dark-aqua;
     position: relative;
+  }
+
+  input.email {
     @media (min-width: 576px) {
       left: 20px;
     }
